@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class LinearSearch {
     static int numList[] = new int[1000];
+
     public static void man(String args[]) {
         Random rand = new Random();
         for (int k = 0; k < numList.length; k++) {
@@ -14,15 +15,18 @@ public class LinearSearch {
         }
         linearSearch(974);
     }
-    public static int linearSearch(int lookup){
-        for (int k = 0; k < numList.length; k++) {
-            if(numList[k] == lookup){
-                return k;
-        }
 
+    public static int linearSearch(int lookup) {
+        for (int k = 0; k < numList.length; k++) {
+            if (numList[k] == lookup) {
+                return k;
+
+            }
         }
-        }
-        }
+        return -1;
+
+    }
+}
 
 
 
